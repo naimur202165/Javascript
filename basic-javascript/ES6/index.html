@@ -2,38 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
   </head>
   <body>
-    <script>
-      let myFristPromise = new Promise((resolve, reject) => {
-        let name = "Naimur";
-        setTimeout(() => {
-          resolve(name), 3000;
-        });
-        // resolve(name);
-      });
-
-      myFristPromise
-        .then((name) => {
-          console.log(name);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-      let data = fetch(`https://jsonplaceholder.typicode.com/users`)
-        .then((data) => {
-          console.log(data.json());
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-
-      console.log(data);
-
-      //   console.log(myFristPromise);
-    </script>
+    <script src="./index.js"></script>
   </body>
 </html>
